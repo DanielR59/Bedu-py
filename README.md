@@ -49,7 +49,15 @@ Statistical Assessment](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.
 - Haber buscado soluciones o análisis que otras personas hayan realizado anteriormente para enriquecer nuestro proceso
 
 #### DESARROLLO
-1. ...
+1. Existe una relacion entre la cantidad de dinero perdido de un estado y su CPI?
+2. La relacion entre en la corrupcion y el CPI es positiva o negativa?
+3. Cuales son los estados con peor manejo de recursos
+4. Cuanto dinero perdido tenemos alcualmente
+5. Como varia el mal manejo de los recursos con respecto al tiempo
+6. Cuales son las organizaciones gubernamentales con peor manejo de los recursos publicos
+7. Cuales son los sectores peor administrados
+8. Existe alguna relacion entre el sector y eficiencia de la resolucion de las auditorias?
+9. Cual es el sector y la entidad federativa mas auditada
 
 # Colección de Datos
 
@@ -72,3 +80,53 @@ Statistical Assessment](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.
 - [Encuesta Nacional de Calidad e Impacto Gubernamental (ENCIG) 2019](https://www.inegi.org.mx/app/saladeprensa/noticia.html?id=5724)
 - [PERCEPCIÓN DE LA CORRUPCIÓN Y CALIDAD DE LA TRANSPARENCIA EN ENTIDADES FEDERATIVAS SELECCIONADAS](https://contralacorrupcion.mx/anatomiadigital/content/corrupcion-en-mexico.php)
 - Algunos otros datasets de interes en [este sitio](https://politica.expansion.mx/mexico/2019/12/09/10-datos-que-revelan-que-tan-grave-es-la-corrupcion-en-mexico).
+
+# 4.- Análisis Exploratorio de nuestro Dataset
+
+### OBJETIVO 
+
+- Leer nuestro dataset en un `DataFrame` de `pandas`.
+- Realizar Análisis Exploratorio de Datos básico para conocer algunas de las características de nuestro conjunto de datos.
+
+### DESARROLLO
+
+En este Postwork vamos a empezar a analizar nuestro conjunto de datos usando `pandas`. Sé que hasta ahora sólo hemos revisado cómo leer archivos tipo JSON usando `pandas`. El módulo está diseñado para aprender los diferentes tipos de formatos y explorar nuevas fuentes de datos en el momento en el que sean más apropiadas. En caso de que tu dataset tenga algún formato distinto a JSON, pídele ayuda a tu experta para que te guíe rápidamente en el proceso de lectura de tus datos. La experta puede proveerte código para que rápidamente puedas convertir tu conjunto de datos a un `DataFrame`.
+
+Algunas de las preguntas que estamos intentando responder en esta exploración son las siguientes:
+
+1. ¿El conjunto de datos que tengo realmente me sirve para responder algunas de las preguntas que me planteé?
+   > Si :)
+
+2. ¿Qué tamaño tiene mi conjunto de datos? ¿Serán datos suficientes?
+   > Contamos con datos del 100% de las entidades federativas de la nacion
+
+3. ¿Qué columnas tengo y qué información tengo en cada una de esas columnas?
+```
+0   Año Cuenta Pública                21606 non-null  int64  
+ 1   Sector                            21606 non-null  object 
+ 2   Ente Fiscalizado                  21606 non-null  object 
+ 3   Entidad Federativa                21606 non-null  object 
+ 4   Tipo Auditoría                    21606 non-null  object 
+ 5   Título                            21606 non-null  object 
+ 6   Universo (miles pesos)            21606 non-null  object 
+ 7   Muestra (miles pesos)             21606 non-null  object 
+ 8   Ente a quien se dirige la Acción  21606 non-null  object 
+ 9   Tipo Acción                       21606 non-null  object 
+ 10  Texto Acción                      17841 non-null  object 
+ 11  terminado                         21606 non-null  bool   
+ 12  desaparecido                      5724 non-null   float64
+```
+4. Los nombres que tienen mis columnas, ¿son el nombre más apropiado?
+   > Si
+
+5. ¿Qué tipos de datos tengo en cada columna? ¿Parecen ser el tipo correcto de datos? ¿O es un tipo de datos "incorrecto"?
+   > ...
+
+6. Si selecciono algunas filas al azar y las observo, ¿estoy obteniendo los datos que debería? ¿O hay datos que parecen estar "sucios" o "incorrectos"?
+   > Datos ok
+
+Responde estas preguntas usando las técnicas que aprendiste en esta sesión y comparte tus hallazgos con tus compañeros y la experta.
+
+##### (Para tu entrega final)
+
+Escriban en su archivo de entrega final qué hallazgos preliminares encontraros en su exploración básica de datos. Asimismo, no se olviden de guardar bien su código para entregarlo en el Notebook final.
