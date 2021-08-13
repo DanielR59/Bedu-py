@@ -172,4 +172,16 @@ Una version en Google Colaboratory se encuentra disponible en el siguiente enlac
 </p>
 
 # Video explicativo
+<p align="center">
 [![Alt text](https://img.youtube.com/vi/6kOk_52CIOA/0.jpg)](https://www.youtube.com/watch?v=6kOk_52CIOA)
+</p>
+
+## Presentación
+<p align="center">
+  <div align="center"><a href="https://docs.google.com/presentation/d/1zR2Sk9QEixoVjZQ0zXqgyQqsLSsFR9JUVnXxbekD3GA/edit?usp=sharing" page="_blank"><img src="https://github.com/Erick-INCS/Bedu-py/blob/main/img/slides.png?raw=true">
+  <br>
+  Entra aquí</a>
+</div>
+</p>
+
+
