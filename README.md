@@ -62,7 +62,7 @@ Statistical Assessment](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.
 - [Reporte del indicador general de percepción de corrupción](https://datos.gob.mx/busca/dataset/resultados-de-encuestas/resource/bd173fb7-e670-4ecf-93cb-d29782b4b3e5)
 - [Encuesta Nacional de Calidad e Impacto Gubernamental (ENCIG) 2019](https://www.inegi.org.mx/app/saladeprensa/noticia.html?id=5724)
 - [PERCEPCIÓN DE LA CORRUPCIÓN Y CALIDAD DE LA TRANSPARENCIA EN ENTIDADES FEDERATIVAS SELECCIONADAS](https://contralacorrupcion.mx/anatomiadigital/content/corrupcion-en-mexico.php)
-- Algunos otros datasets de interes en [este sitio](https://politica.expansion.mx/mexico/2019/12/09/10-datos-que-revelan-que-tan-grave-es-la-corrupcion-en-mexico).
+- Algunos otros datasets de interés en [este sitio](https://politica.expansion.mx/mexico/2019/12/09/10-datos-que-revelan-que-tan-grave-es-la-corrupcion-en-mexico).
 
 # 4.- Análisis Exploratorio de nuestro Dataset
 
@@ -159,3 +159,6 @@ Prueba aplicar agregaciones a tu DataFrame para ver si puedes empezar a responde
   > Con gráficas de correlación para indentificar posibles variables predictoras.
   > Con un gráfico de caja podríamos observar la distribución de los datos y a partir de los outliers, identificar los estados que tienen una cantidad "anormal" de corrupción.
   > Mediante una representación cartográfica mostrar la correlación de entre la densidad de población y el nivel de corrupción.
+
+# Jupyter Notebook
+El Jupyter Notebook utilizado para este proyecto se encuentra disponible entre los archvos de este repositorio [(aquí)](Corrupt.ipynb).
