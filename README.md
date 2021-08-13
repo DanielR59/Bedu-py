@@ -162,3 +162,15 @@ Prueba aplicar agregaciones a tu DataFrame para ver si puedes empezar a responde
 
 # Jupyter Notebook
 El Jupyter Notebook utilizado para este proyecto se encuentra disponible entre los archvos de este repositorio [(aquí)](Corrupt.ipynb).
+
+Una version en Google Colaboratory se encuentra disponible en el siguiente enlace:
+<p align="center">
+  <div align="center"><a href="https://drive.google.com/file/d/11bZloNSfUc91HH-jQVN5-Jc7SdzQIw0U/view?usp=sharing" page="_blank"><img src="https://github.com/Erick-INCS/Bedu-py/blob/main/img/colab.png?raw=true">
+  <br>
+  Entra aquí</a>
+</div>
+</p>
+
+# Video explicativo
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6kOk_52CIOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
