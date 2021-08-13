@@ -1,3 +1,9 @@
+# Análisis de la corrupción en México
+### ¿Por qué analizar la corrupción?
+<p align="center">
+Se considera a la corrupción como uno de los más relevantes obstáculos para el desarrollo del país, y como tal, es necesario entenderlo para saber afrontarlo de manera efectiva, y con esto, ayudar a construir una sociedad más justa y menos desigual.
+</p>
+
 ## Equipo 14
 <p align="center"><img src="img/giphy.gif" /></p>
 
