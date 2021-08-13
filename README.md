@@ -7,15 +7,8 @@
 - [José Daniel Rosas Avila](https://github.com/DanielR59)
 - [José de Jesús Becerra Burguete](https://github.com/Burguete9)
 
-# Identificación del Problema
+# 1. Identificación del Problema
 
-### OBJETIVO 
-
-- Identificar un problema (el primer paso en todo proyecto de ciencia de datos).
-
-### DESARROLLO
-
-En este Postwork trabajaremos con estos 4 pasos.
 ### 1. Identificación de un problema
 > - Mal manejo (intencional) de los recursos publicos del pais y una falta de mecanismos efectivos para tratar con esta problematica.
 > - Rezago tecnologico/economico del pais en relacion con otros.
@@ -46,17 +39,7 @@ Statistical Assessment](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.
 ](https://www2.deloitte.com/mx/es/pages/dnoticias/articles/asi-se-mide-corrupcion-mexico.html)
 - [Los Mexicanos Frente a la Corrupción y la Impunidad 2020.](https://contralacorrupcion.mx/los-mexicanos-frente-a-la-corrupcion-y-la-impunidad-2020/)
 
-# Planteamiento de preguntas
-### OBJETIVO 
-
-- Realizar planteamiento de preguntas (el paso #2 en todo proyecto de ciencia de datos).
-
-#### REQUISITOS 
-
-- Haber identificado un problema
-- Haber realizado algo de investigación sobre el problema y entenderlo bien
-- Haber buscado soluciones o análisis que otras personas hayan realizado anteriormente para enriquecer nuestro proceso
-
+# 2. Planteamiento de preguntas
 #### DESARROLLO
 1. Existe una relacion entre la cantidad de dinero perdido de un estado y su CPI?
 2. La relacion entre en la corrupcion y el CPI es positiva o negativa?
@@ -68,16 +51,7 @@ Statistical Assessment](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.
 8. Existe alguna relacion entre el sector y eficiencia de la resolucion de las auditorias?
 9. Cual es el sector y la entidad federativa mas auditada
 
-# Colección de Datos
-
-### OBJETIVO 
-
-- Identificar las diferentes maneras que hay de coleccionar datos y utilizar la más apropiada para responder a tus preguntas.
-
-#### REQUISITOS 
-
-- Haber elegido un problema que te parezca interesante.
-- Haberte planteado una serie de preguntas que te parecen relevantes para tu problema.
+# 3. Colección de Datos
 
 #### DESARROLLO
 - [Transparencia presupuestaria - Observatorio del gasto](https://www.transparenciapresupuestaria.gob.mx/es/PTP/Datos_Abiertos)
@@ -91,11 +65,6 @@ Statistical Assessment](https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.
 - Algunos otros datasets de interes en [este sitio](https://politica.expansion.mx/mexico/2019/12/09/10-datos-que-revelan-que-tan-grave-es-la-corrupcion-en-mexico).
 
 # 4.- Análisis Exploratorio de nuestro Dataset
-
-### OBJETIVO 
-
-- Leer nuestro dataset en un `DataFrame` de `pandas`.
-- Realizar Análisis Exploratorio de Datos básico para conocer algunas de las características de nuestro conjunto de datos.
 
 ### DESARROLLO
 
@@ -129,13 +98,64 @@ Algunas de las preguntas que estamos intentando responder en esta exploración s
    > Si
 
 5. ¿Qué tipos de datos tengo en cada columna? ¿Parecen ser el tipo correcto de datos? ¿O es un tipo de datos "incorrecto"?
-   > ...
+   > ( Ver respuesta a la pregunta 3 )
 
 6. Si selecciono algunas filas al azar y las observo, ¿estoy obteniendo los datos que debería? ¿O hay datos que parecen estar "sucios" o "incorrectos"?
-   > Datos ok
+   > Datos limpiados correctamente
 
-Responde estas preguntas usando las técnicas que aprendiste en esta sesión y comparte tus hallazgos con tus compañeros y la experta.
+# 5.- Limpieza de datos y agregaciones
+1. Explora tu dataset con el fin de encontrar los NaNs que contiene. Piensa en la distribución de NaNs por columna y por fila.
+> Ok :heavy_check_mark:
 
-##### (Para tu entrega final)
+Piensa cuáles son los procedimientos que puedes aplicar a tus NaNs. ¿Tenemos que eliminar las filas/columnas que tienen esos NaNs? ¿O podríamos rellenar esos NaNs con algún valor de manera que podamos retener esas filas/columnas?
+> Para este proyecto es relevante mantener todos los datos, por lo que los NAs se omiten mediante filtros cuando es necesario.
 
-Escriban en su archivo de entrega final qué hallazgos preliminares encontraros en su exploración básica de datos. Asimismo, no se olviden de guardar bien su código para entregarlo en el Notebook final.
+Limpia tu dataset de manera que no quede ningún NaN.
+> Ok :heavy_check_mark:
+
+Reindexa tu dataset si lo consideras necesario.
+> Ok :heavy_check_mark:
+
+Renombra tus columnas si lo consideras necesario.
+> Ok :heavy_check_mark:
+
+Prueba aplicar agregaciones a tu DataFrame para ver si puedes empezar a responder algunas de las preguntas que te planteaste anteriormente
+> Ok :heavy_check_mark:
+
+# 7.- Transformación, filtración y ordenamiento de datos
+
+1. Checa que todos tus datos tengan el tipo de dato correcto. Si no es así, usa casting para convertir tus datos al tipo de dato correcto (recuerda que tipos de dato como datetime64 se guardan como strings cuando están en archivos .csv, así que tendrás que convertirlos al tipo de dato apropiado cada vez que importes tu archivo.)
+> Procedimiento realizado en el pipeline de preprocesamiento.
+
+2. Si tienes columnas de texto, asegúrate de que todas tengan el formato correcto. Si no es así, utiliza las técnicas de manipulación de strings para darles el formato que necesitas.
+> Procedimiento realizado en el pipeline de preprocesamiento.
+
+3. Si consideras que alguna de tus columnas sería más clara si los datos tuvieran otro formato o representación usa map para transformar los datos de esa columna.
+> Ok :heavy_check_mark:
+
+4. Si crees que es posible generar nuevas columnas útiles a partir de las columnas que ya tienes, usa apply para generar nuevos datos a partir de los que tienes y añádelos a tu dataset.
+> Ok :heavy_check_mark:
+
+5. Con el fin de responder algunas de las preguntas que te planteaste acerca de tu dataset, usa filtros y sorting para crear nuevos subconjuntos y reordenamientos que sean más adecuados para responder tus preguntas. Primero comienza intentando responder las preguntas que te planteaste al principio, pero después puedes solamente explorar para ver si encuentras otras preguntas que no te habías planteado anteriormente.
+> Ok :heavy_check_mark:
+
+# 8.- Preparándose para las siguientes Fases
+
+1.- La primera parte consiste en tomar todo lo que hemos hecho hasta ahora y colocarlo limpio y ordenado en un Jupyter Notebook. Una de las maravillas de los Jupyter Notebooks es que nos permiten intercalar texto con código, de manera que podamos ir "guiando" al lector a través de nuestro hilo de pensamiento. Bueno, imagina que quieres explicarle a alguien todo lo que has hecho usando solamente un Jupyter Notebook. No puedes hablar con esta persona ni aclararle cosas: todo debe de estar clarificado en el Notebook. Para embellecer un poco tus celdas de texto, puedes usar lenguaje Markdown. Asegúrate de empezar con una introducción donde hables acerca del tema que te llamó la atención. Explica por qué quisiste abordar este tema, cuáles fueron tus preguntas iniciales, y el problema que te gustaría resolver.
+> Ok :heavy_check_mark:
+
+2.- La segunda parte consiste en hacer planes para el futuro. El Procesamiento de Datos es sólo la fase "preparatoria". Después siguen las tres fases que le terminan de dar forma a todo proyecto de Ciencia de Datos: Análisis Estadístico, Visualización y Predicción/Inferencia. Esta última fase (Predicción) no siempre está presente y no siempre es necesaria. Pero el Análisis Estadístico y la Visualización son partes intrínsecas de la Ciencia de Datos. La segunda parte de este Postwork consiste en hacer planes a futuro. Piensa qué puedes hacer con los datos que tienes. ¿Qué te gustaría analizar? ¿Qué información está disponible en tus datos? ¿Cómo podrías ayudarte a entender mejor los datos usando gráficas y visualizaciones? Has una lista de tus planes a futuro. Seguramente esa lista irá cambiando conforme avances en el siguiente módulo, pero es un gran comienzo para tener una dirección clara.
+> Ok :heavy_check_mark:
+
+  1. ¿Qué te gustaría analizar?
+  > Estamos interesados en analizar la distribución de los “incidentes” identificados en los recursos públicos y en buscar posibles factores o patrones en los datos que nos permitan obtener una mejor percepción numérica sobre estos fenómenos en la distribución de los presupuestos públicos del país, para asi, lograr desarrollar un sistema predictivo que nos permita tener un mejor control de los recursos públicos al identificar posibles casos de riesgo.
+
+  2. ¿Qué información está disponible en tus datos?
+  > Auditorias realizadas al presupuesto público con sus resultados, clasificadas por sector, estado, municipio, año y demas categorias.
+  > También contamos con los datos de la totalidad del presupuesto publico en el portal de transparencia presupuestaria.
+
+  3. ¿Cómo podrías ayudarte a entender mejor los datos usando gráficas y visualizaciones?
+  > Utilizando histogramas que nos permitan identificar la naturaleza de los datos que manejamos.
+  > Con gráficas de correlación para indentificar posibles variables predictoras.
+  > Con un gráfico de caja podríamos observar la distribución de los datos y a partir de los outliers, identificar los estados que tienen una cantidad "anormal" de corrupción.
+  > Mediante una representación cartográfica mostrar la correlación de entre la densidad de población y el nivel de corrupción.
