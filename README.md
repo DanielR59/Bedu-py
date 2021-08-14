@@ -158,12 +158,16 @@ Prueba aplicar agregaciones a tu DataFrame para ver si puedes empezar a responde
 
   2. ¿Qué información está disponible en tus datos?
   > Auditorias realizadas al presupuesto público con sus resultados, clasificadas por sector, estado, municipio, año y demas categorias.
+  > 
   > También contamos con los datos de la totalidad del presupuesto publico en el portal de transparencia presupuestaria.
 
   3. ¿Cómo podrías ayudarte a entender mejor los datos usando gráficas y visualizaciones?
   > Utilizando histogramas que nos permitan identificar la naturaleza de los datos que manejamos.
+  > 
   > Con gráficas de correlación para indentificar posibles variables predictoras.
+  > 
   > Con un gráfico de caja podríamos observar la distribución de los datos y a partir de los outliers, identificar los estados que tienen una cantidad "anormal" de corrupción.
+  > 
   > Mediante una representación cartográfica mostrar la correlación de entre la densidad de población y el nivel de corrupción.
 
 # Jupyter Notebook
